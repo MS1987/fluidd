@@ -24,6 +24,7 @@
 
     <v-card-text>
       <e-charts-bed-mesh
+        style="display:none"
         v-if="mesh && mesh[matrix] && mesh[matrix].coordinates && mesh[matrix].coordinates.length > 0"
         ref="chart"
         :options="options"
